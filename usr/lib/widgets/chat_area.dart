@@ -79,7 +79,7 @@ class _ChatAreaState extends State<ChatArea> {
                       ],
                       selected: {provider.isImageMode},
                       onSelectionChanged: (Set<bool> newSelection) {
-                        provider.toggleMode();
+                        provider.toggleMode(newSelection.first);
                       },
                     );
                   },
